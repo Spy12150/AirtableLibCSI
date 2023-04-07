@@ -8,7 +8,7 @@ function InputOutput() {
   return(
     <div>
       <div className="title">
-        <h1>Input Output Component</h1>
+        <h1>Librarian Code Placeholder</h1>
       </div>
       <div className="sign-out-button">
         <button>Sign Out</button>

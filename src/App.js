@@ -1,25 +1,12 @@
 import React, { useState } from "react";
-
-return (
-    <div>
-      <h1>My App Title</h1>
-      <button onClick={handleSignOutClick}>Sign Out</button>
-    </div>
-  );
-
-
-}
 function InputOutput() {
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
-  const [input3, setInput3] = useState("");
+   const [input3, setInput3] = useState("");
 
-}
-
-export default MyApp;
-    <div>
-      <div>
-        <label htmlFor="input1">Input 1:</label>
+     <div>
+       <div>
+         <label htmlFor="input1">Input 1:</label>
         <input
           id="input1"
           type="text"
@@ -55,11 +42,11 @@ export default MyApp;
       </div>
       <div>
         <h3>Output 3:</h3>
-        <div>{input3}</div>
-      </div>
-    </div>
+         <div>{input3}</div>
+       </div>
+     </div>
 
-  );
-}
+   );
+ }
 
 export default InputOutput;

@@ -1,13 +1,20 @@
 import React, { useState } from "react";
+
 function InputOutput() {
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
-   const [input3, setInput3] = useState("");
+  const [input3, setInput3] = useState("");
 
   return(
-     <div>
-       <div>
-         <label htmlFor="input1">Input 1:</label>
+    <div>
+      <div className="title">
+        <h1>Input Output Component</h1>
+      </div>
+      <div className="sign-out-button">
+        <button>Sign Out</button>
+      </div>
+      <div>
+        <label htmlFor="input1">Input 1:</label>
         <input
           id="input1"
           type="text"
@@ -43,11 +50,10 @@ function InputOutput() {
       </div>
       <div>
         <h3>Output 3:</h3>
-         <div>{input3}</div>
-       </div>
-     </div>
-
-   );
- }
+        <div>{input3}</div>
+      </div>
+    </div>
+  );
+}
 
 export default InputOutput;

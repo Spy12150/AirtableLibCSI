@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 
-function InputOutput() {
-  const [input1, setInput1] = useState("");
-  const [input2, setInput2] = useState("");
-  const [input3, setInput3] = useState("");
+function MyApp() {
+  const handleSignOutClick = () => {
+    // handle signout logic here
+  };
 
   return (
-    return (
     <div>
       <h1>My App Title</h1>
       <button onClick={handleSignOutClick}>Sign Out</button>
     </div>
   );
 }
+function InputOutput() {
+  const [input1, setInput1] = useState("");
+  const [input2, setInput2] = useState("");
+  const [input3, setInput3] = useState("");
+
+}
+
+export default MyApp;
     <div>
       <div>
         <label htmlFor="input1">Input 1:</label>

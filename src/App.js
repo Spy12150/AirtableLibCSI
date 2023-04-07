@@ -4,6 +4,7 @@ function InputOutput() {
   const [input2, setInput2] = useState("");
    const [input3, setInput3] = useState("");
 
+  return(
      <div>
        <div>
          <label htmlFor="input1">Input 1:</label>

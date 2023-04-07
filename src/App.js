@@ -6,6 +6,13 @@ function InputOutput() {
   const [input3, setInput3] = useState("");
 
   return (
+    return (
+    <div>
+      <h1>My App Title</h1>
+      <button onClick={handleSignOutClick}>Sign Out</button>
+    </div>
+  );
+}
     <div>
       <div>
         <label htmlFor="input1">Input 1:</label>
@@ -47,6 +54,7 @@ function InputOutput() {
         <div>{input3}</div>
       </div>
     </div>
+
   );
 }
 

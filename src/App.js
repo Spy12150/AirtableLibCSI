@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 
-function MyApp() {
-  const handleSignOutClick = () => {
-    // handle signout logic here
-  };
-
-  return (
+return (
     <div>
       <h1>My App Title</h1>
       <button onClick={handleSignOutClick}>Sign Out</button>
     </div>
   );
+
+
 }
 function InputOutput() {
   const [input1, setInput1] = useState("");

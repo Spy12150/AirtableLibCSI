@@ -1,10 +1,45 @@
 import React, { useState } from "react";
+import {Input, useBase, useRecords} from '@airtable/blocks/ui'
 
 function InputOutput() {
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
   const [input3, setInput3] = useState("");
 
+  const base= useBase()
+  const table= base.getTable ("Books") // books table
+  const records = useRecords(table) // all records
+
+function addNewBook(name, value, status){
+  table.createRecordAsync({
+    "Name": name,
+    "Value": value,
+    "Status": status
+  })
+}
+  
+  function Cell() {
+records[0]. getCellValue ("Status") 
+
+
+const records2 = useRecords (
+  table,
+  { fields: ["Name","Status" ] }
+) 
+
+table. createRecordAsync({
+  "Name": "X",
+  "Value": "3",
+  "Status" : "in transit"
+});
+
+table.updateRecordAsync(records[0],
+{ "Status" : "Redacted"} 
+)
+}
+  
+  
+  
   return(
     <div>
       <div className="title">
@@ -55,5 +90,11 @@ function InputOutput() {
     </div>
   );
 }
+
+ <button onClick={() => addNewBook(input1,input2,input3)}>
+        Submit
+      </button>
+     
+    </div>
 
 export default InputOutput;
